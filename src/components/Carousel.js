@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 import entryImage from '../images/entry.jpg';
 import console_area_half from '../images/console-area-half.jpg';
 import console_area from '../images/console-area.jpg';
 import pc_area from '../images/pc-area.jpg';
-import two_pc_setup from '../images/two-pc-setup.jpg';
+import two_pc_setup from '../images/wallhaven-3kqev9_1280x960.png';
 
 const images = [
     { id: 1, src: entryImage },
