@@ -7,15 +7,15 @@ import entryImage from '../images/entry.jpg';
 import console_area_half from '../images/console-area-half.jpg';
 import console_area from '../images/console-area.jpg';
 import pc_area from '../images/pc-area.jpg';
-import two_pc_setup from '../images/wallhaven-3kqev9_1280x960.png';
+// import two_pc_setup from '../images/wallhaven-3kqev9_1280x960.png';
 
 const images = [
     { id: 1, src: entryImage },
     { id: 2, src: console_area_half },
     { id: 3, src: console_area },
-    { id: 4, src: pc_area },
-    { id: 5, src: two_pc_setup }
+    { id: 4, src: pc_area }
 ];
+    // { id: 5, src: two_pc_setup }
 
 const settings = {
     dots: false,
