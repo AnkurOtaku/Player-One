@@ -82,11 +82,10 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <Link to="/Main" className='px-3 py-2 rounded-xl hover:bg-lime-500 hover:text-black'>Player One</Link>
+        <Link to="/" className='px-3 py-2 rounded-xl hover:bg-lime-500 hover:text-black'>Player One</Link>
         <img src='spidy.jpg' alt='' className="hidden md:block h-10 w-10 hover:bg-lime-500"/>
       </div>
     </nav>
-    // width : -webkit-fill-available, width: -moz-available
   );
 };
 

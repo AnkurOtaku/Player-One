@@ -6,8 +6,8 @@ export default function Profile() {
 
   return (
     <div className='m-4 grid items-center justify-around grid-cols-4 gap-4'>
-      {card_forward_list.map((element) => (
-        <Card card_head={element} />
+      {card_forward_list.map((element, index) => (
+        <Card card_head={element} key={index}/>
       ))}
     </div>
   );
