@@ -15,7 +15,6 @@ const images = [
   { id: 3, src: console_area },
   { id: 4, src: pc_area },
 ];
-// { id: 5, src: two_pc_setup }
 
 const settings = {
   dots: false,
@@ -33,7 +32,7 @@ const Carousel = () => {
   const [nav1, setNav1] = useState(null);
 
   return (
-    <div className="max-w-screen-lg mx-auto my-4">
+    <div className="max-w-screen-lg md:max-w-2xl mx-auto my-4 overflow-x-hidden">
       <Slider {...settings} asNavFor={nav1} ref={(slider) => setNav1(slider)}>
         {images.map((image) => (
           <div key={image.id}>
@@ -42,7 +41,6 @@ const Carousel = () => {
               alt={`Entry ${image.id}`}
               className="object-cover"
             />
-            {/* cover image */}
           </div>
         ))}
       </Slider>

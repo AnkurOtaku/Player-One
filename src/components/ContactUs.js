@@ -6,7 +6,7 @@ const ContactUs = () => {
       <br />
       <br />
       <div className="bg-black text-white" id="ContactUs">
-        <div className="mx-auto grid grid-cols-3 gap-4 max-w-[1440px] p-3">
+        <div className="mx-auto grid grid-cols-2 gap-4 max-w-[1440px] p-3">
           <div className="flex flex-col items-center">
             <p className="font-semibold text-lg hover:text-red-500">
               Contact Us
@@ -21,7 +21,7 @@ const ContactUs = () => {
             <br />
             <a
               className="hover:text-pink-600"
-              href="https://instagram.com/ankurotaku"
+              href="https://instagram.com/player_one_mt"
             >
               Instagram
             </a>
@@ -32,18 +32,18 @@ const ContactUs = () => {
             </p>
             <br />
             <a
-              className="hover:text-red-400"
+              className="hover:text-blue-400"
               href="https://goo.gl/maps/EoucpzAAmEBZsFFs9"
             >
-              Google Maps
+              Model Town
             </a>
-          </div>
-          <div className="flex flex-col items-center">
-            <p className="font-semibold text-lg hover:text-blue-500">
-              Payment QR Code
-            </p>
             <br />
-            <img className="" src="" alt="QR-code" />
+            <a
+              className="hover:text-lime-400"
+              href="https://goo.gl/maps/KVsLd7TRoY45aJ4j8"
+            >
+              MG Mall
+            </a>
           </div>
         </div>
       </div>
