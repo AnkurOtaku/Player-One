@@ -5,7 +5,7 @@ const ContactUs = () => {
     <>
       <br />
       <br />
-      <div className="bg-black text-white" id="ContactUs">
+      <div className="bg-black text-white pb-5" id="ContactUs">
         <div className="mx-auto grid grid-cols-2 gap-4 max-w-[1440px] p-3">
           <div className="flex flex-col items-center">
             <p className="font-semibold text-lg hover:text-red-500">

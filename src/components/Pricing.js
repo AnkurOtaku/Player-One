@@ -28,7 +28,7 @@ export default function Main() {
         <div className="text-xl text-semibold text-center">
           Gaming Platforms
           <br/>
-          <sub className="text-sm text-slate-400">*charges mentioned are for 30 min per person</sub>
+          <sub className="text-sm text-slate-400">*charges mentioned are for 30 min per individual</sub>
         </div>
         <br />
         <div className="grid justify-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
