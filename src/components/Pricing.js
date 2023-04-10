@@ -24,7 +24,7 @@ export default function Main() {
 
   return (
     <>
-      <div className="mx-auto max-w-screen-lg px-3">
+      <div className="mx-auto max-w-screen-lg p-3">
         <div className="text-xl text-semibold text-center">
           Gaming Platforms
           <br/>

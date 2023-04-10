@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import ContactUs from "./components/ContactUs";
 import Carousel from "./components/Carousel";
 import Pricing from "./components/Pricing";
+import Facilities from "./components/Facilities";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       </p>
       <Carousel />
       <Pricing />
+      <Facilities />
       <ContactUs />
     </>
   );

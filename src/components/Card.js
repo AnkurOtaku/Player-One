@@ -13,9 +13,9 @@ function Card({ title, path, price }) {
         alt={title}
       />
       <div className="absolute inset-0 bg-black opacity-0 transition-opacity"></div>
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent text-white transition-opacity opacity-0 hover:opacity-100">
+      <div className="absolute inset-0 py-8 text-center bg-gradient-to-t from-black to-transparent text-white transition-opacity opacity-0 hover:opacity-100">
         <div className="text-lg font-bold">{title}</div>
-        <div className="text-xl font-bold">₹{price}</div>
+        {price && <div className="text-xl font-bold">₹{price}</div>}
       </div>
       </div>
     </>
