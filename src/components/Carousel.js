@@ -3,17 +3,35 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import entryImage from "../images/entry.jpg";
-import console_area_half from "../images/console-area-half.jpg";
-import console_area from "../images/console-area.jpg";
-import pc_area from "../images/pc-area.jpg";
-// import two_pc_setup from '../images/wallhaven-3kqev9_1280x960.png';
+// Importing MG MALL branch pics
 
-const images = [
-  { id: 1, src: entryImage },
-  { id: 2, src: console_area_half },
-  { id: 3, src: console_area },
-  { id: 4, src: pc_area },
+import entryImage from "../images/mg-mall/entry.jpg";
+import console_area_half from "../images/mg-mall/console-area-half.jpg";
+import console_area from "../images/mg-mall/console-area.jpg";
+import pc_area from "../images/mg-mall/pc-area.jpg";
+
+// Importing Model town branch pics
+
+import console_setup from "../images/model-town/console-setup.png";
+import driving_simulator_setup from "../images/model-town/driving-simulator-setup.jpg";
+//import wanted_posters from "../images/model-town/wanted-posters.jpg";
+import pc_setup from "../images/model-town/pc-setup.png";
+import player_one_screen from "../images/model-town/player-one-screen.png";
+import group_of_five from "../images/model-town/group-of-five.jpg";
+
+const mg_mall_branch_images = [
+  { src: entryImage },
+  { src: console_area_half },
+  { src: console_area },
+  { src: pc_area },
+];
+
+const model_town_branch_images = [
+  { src: console_setup },
+  { src: driving_simulator_setup },
+  { src: pc_setup },
+  { src: player_one_screen },
+  { src: group_of_five },
 ];
 
 const settings = {
@@ -25,26 +43,42 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   swipeToSlide: true,
-  pauseOnHover: true,
+  pauseOnHover: false,
 };
 
 const Carousel = () => {
   const [nav1, setNav1] = useState(null);
+  const [images, setImages] = useState(mg_mall_branch_images);
 
   return (
-    <div className="max-w-screen-lg md:max-w-2xl mx-auto my-4 overflow-x-hidden">
-      <Slider {...settings} asNavFor={nav1} ref={(slider) => setNav1(slider)}>
-        {images.map((image) => (
-          <div key={image.id}>
-            <img
-              src={image.src}
-              alt={`Entry ${image.id}`}
-              className="object-cover"
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <>
+      <div className="flex justify-center my-3">
+        <button
+          className="border mx-4 p-3 rounded-lg transition-colors hover:bg-lime-400"
+          onClick={()=>{setImages(mg_mall_branch_images)}}
+        >
+          MG Mall Branch
+        </button>
+        <button
+          className="border mx-4 p-3 rounded-lg transition-colors hover:bg-lime-400"
+          onClick={()=>{setImages(model_town_branch_images)}}
+        >
+          Model Town Branch
+        </button>
+      </div>
+      <div className="max-w-screen-lg mx-auto my-4 overflow-x-hidden md:max-w-2xl">
+        <Slider {...settings} asNavFor={nav1} ref={(slider) => setNav1(slider)}>
+          {images.map((image, index) => (
+            <div key={index} className="object-cover">
+              <img
+                src={image.src}
+                alt={`Entry ${index}`}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   );
 };
 
