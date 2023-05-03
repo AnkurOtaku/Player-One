@@ -6,7 +6,7 @@ import Facilities from "./components/Facilities";
 
 function App() {
   return (
-    <div className="md:font-kalam">
+    <div className="">
       <Navbar />
       <h1 className="mx-auto max-w-[1440px] py-3 px-12 font-semibold text-center md:text-xl">
         " Player One is the ultimate destination for gaming enthusiasts. Whether

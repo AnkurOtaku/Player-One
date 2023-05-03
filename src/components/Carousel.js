@@ -49,18 +49,19 @@ const settings = {
 const Carousel = () => {
   const [nav1, setNav1] = useState(null);
   const [images, setImages] = useState(mg_mall_branch_images);
+  // const [active, setActive] = useState("mg_mall");
 
   return (
     <>
       <div className="flex justify-center my-3">
         <button
-          className="border mx-4 p-3 rounded-lg transition-colors hover:bg-lime-400"
+          className="border mx-4 p-3 rounded-lg transition-colors active:bg-lime-400"
           onClick={()=>{setImages(mg_mall_branch_images)}}
         >
           MG Mall Branch
         </button>
         <button
-          className="border mx-4 p-3 rounded-lg transition-colors hover:bg-lime-400"
+          className="border mx-4 p-3 rounded-lg transition-colors active:bg-lime-400"
           onClick={()=>{setImages(model_town_branch_images)}}
         >
           Model Town Branch
@@ -72,6 +73,7 @@ const Carousel = () => {
             <div key={index} className="object-cover">
               <img
                 src={image.src}
+                loading="lazy"
                 alt={`Entry ${index}`}
               />
             </div>
